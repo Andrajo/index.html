@@ -2,55 +2,71 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="autorul" content="Avramescu Andrei">
-        <meta name="cuvinte cheie" content="Game, Buy, Rpg, Shooter, Multiplayer, Singleplayer, Games Pc, Games, Games online, Games Ps4, Games Ps5, Dark Fantasy, Co-op, Fantasy, Open World, Atmospheric, FPS, Action, Gore">
-        <meta name="descrierea" content="Acest site reprezinta un site de cumparare atat a jocurilor video, cat si a echipamentelor necesare ca acestea sa poata fi jucate in modul in care creatorul a dorit.">
-        <link rel="icon" href="file:///C:/Users/andre/Desktop/iconita.png" type="image/png" sizes="16x16">
+        <meta name="author" content="Avramescu Andrei">
+        <meta name="keywords" content="Game, Buy, Rpg, Shooter, Multiplayer, Singleplayer, Games Pc, Games, Games online, Games Ps4, Games Ps5, Dark Fantasy, Co-op, Fantasy, Open World, Atmospheric, FPS, Action, Gore">
+        <meta name="description" content="Acest site reprezinta un site de cumparare atat a jocurilor video, cat si a echipamentelor necesare ca acestea sa poata fi jucate in modul in care creatorul a dorit.">
+        <link rel="icon" href="iconita.png" type="image/png" sizes="16x16">
         <title>Game Store</title>
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
         <header id="Home_page">
-            <section id="first_menu">
-                <h1>Store</h1>
+            <h1>Store</h1>
+            <div id="first_menu">
                 <nav>
-                    <a href="#Home_page">Home page</a>
-                    <a href="https://store.steampowered.com/" target="_blank">Account Info</a>
-                    <a href="https://store.steampowered.com/" target="_blank">Librari</a>
+                    <ul>
+                        <li class="menu1">
+                            <button class="subnavbtn"><a href="#Home_page" target="_blank">Home page</a><i class="fa fa-caret-down"></i></button>
+                            <ul class="subnav-content">
+                                <li>
+                                    <a href="#Sales">Sales</a>
+                                </li>
+                                <li>
+                                    <a href="#Most_popular">Most popular</a>
+                                </li>
+                                <li>
+                                    <a href="#New_games">New games</a>
+                                </li>
+                            </ul>
+                            </li>
+                        <li class="menu1">
+                            <button class="subnavbtn"><a href="#Home_page" target="_blank">Account Info</a></button>
+                        </li>
+                        <li class="menu1">
+                            <button class="subnavbtn"><a href="#Home_page" target="_blank">Library</a></button>
+                        </li>
+                    </ul>
                 </nav>
-                <hr>
-            </section>
+            </div>
+        </header>
+        <main>
+            <div class="triangle">
+            </div>
             <section id="warning">
+                <hr>
                 <h2>Warning</h2>
                 <p><strong>The site is not complete yet, you might wanna try <a href="https://store.steampowered.com/" target="_blank">Steam</a> for now!</strong></p>
                 <hr>
             </section>
-        </header>
-        <main>
-            <section id="second_menu">
-                <h3>Store menu</h3>
-                <nav>
-                    <a href="#Sales">Sales</a>
-                    <a href="#Most_popular">Most popular</a>
-                    <a href="#New_games">New games</a>
-                </nav>
-            </section>
             <section id="Sales">
-                <h3>Today's Sales</h3>
+                <h2>Today's Sales</h2>
+                <iframe id="item5" name="if" width="400" height="250" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <ul>
-                    <li>
+                    <li id="item1">
                         <p>Dark Souls III -30$</p>
                         <p><i>50% off</i></p>
                         <details>
-                            <summary>About Drak Souls III</summary>
+                            <summary>About Dark Souls III</summary>
                             <p>
                                 <q>Dark Souls continues to push the boundaries with the latest, ambitious chapter in the critically-acclaimed and genre-defining series.<br>
                                 Prepare yourself and Embrace The Darkness!</q><br>
                                 <b>Rpg game, Dark Fantasy, Co-op</b>
                             </p>
                         </details>
-                        <iframe width="400" height="250" src="https://www.youtube.com/embed/cWBwFhUv1-8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <a target="if" href="https://www.youtube.com/embed/cWBwFhUv1-8">Trailer</a>
+                        <hr>
                     </li>
-                    <li>
+                    <li id="item2">
                         <p>Witcher 3 -5$</p>
                         <p><i>90% off</i></p>
                         <details>
@@ -60,9 +76,10 @@
                                 <br><b>Rpg game, Fantasy, Open World, Atmospheric</b>
                             </p>
                         </details>
-                        <iframe width="400" height="250" src="https://www.youtube.com/embed/ehjJ614QfeM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <a target="if" href="https://www.youtube.com/embed/ehjJ614QfeM">Trailer</a>
+                        <hr>
                     </li>
-                    <li>
+                    <li id="item3">
                         <p>Doom Eternal -49$</p>
                         <p><i>17% off</i></p>
                         <details>
@@ -72,12 +89,12 @@
                                 <br><b>FPS, Action, Gore</b>
                             </p>
                         </details>
-                        <iframe width="400" height="250" src="https://www.youtube.com/embed/FkklG9MA0vM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <a target="if" href="https://www.youtube.com/embed/FkklG9MA0vM">Trailer</a>
                     </li>
                 </ul>
             </section>
             <section id="Most_popular">
-                <h3>Most popular games</h3>
+                <h2>Most popular games</h2>
                 <dl>
                     <dt>Shooter:</dt>
                     <dd>Counter Strike: Global Ofensive</dd>
@@ -88,11 +105,11 @@
                 </dl>
             </section>
             <section id="New_games">
-                <h3>Incoming games</h3>
+                <h2>Incoming games</h2>
                 <ol>
                     <li>Elden Ring</li>
-                    <li>Pokemon Legend of Arseus</li>
-                    <li>Rezident Evil: Village</li>
+                    <li>Pokemon Legend of Arceus</li>
+                    <li>Resident Evil: Village</li>
                 </ol>
                 <p>Pre Purchase now available for all of them!</p>
             </section>
@@ -101,9 +118,9 @@
             <hr>
             <a href="#Home_page">Top of the page</a>
             <address>
-                Pentru suport:<br>
-                Telefon:<a href="tel:0761234567">0761234567</a><br>
-                Adresa: Bucuresti, Str Garii, Nr 123<br>
+                For support:<br>
+                Telephone:<a href="tel:0761234567">0761234567</a><br>
+                Address: Bucharest, Str Garii, Nr 123<br>
                 E-mail: <a href="mailto:DaBaniiMie@NueScam.com">Persoana Reala</a><br>
             </address>
             <p><small>&copy; <time datetime="2021-03-05 14:00">Cinci martie,anul 2021</time> </small></p>
