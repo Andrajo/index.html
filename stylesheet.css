@@ -1,11 +1,111 @@
+/*body*/
+
 body{
     background-color: rgba(24,182,190,0.8);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
+hr{
+    border-top: solid black;
+    border-bottom: hidden;
+}
+
+h1, #warning{
+    text-align: center;
+}
+
+#warning a{
+    text-decoration: none;
+    color: #728CD6;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 12px;
+}
+
+/*menu*/
+
+#first_menu {
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+
+#first_menu a {
+    float: left;
+    font-size: 16px;
+    color: #76D694;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu1 {
+    float: left;
+    overflow: hidden;
+    padding: 14px 16px;
+    background-color: black;
+    height: 60px;
+}
+
+.menu1 .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #76D694;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 1px;
+}
+
+.subnavbtn{
+    display: inline-grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 150px;
+}
+
+.menu1:hover .subnavbtn {
+    border: 1px solid #76D694;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: auto;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: right;
+    color: #76D694;
+    text-decoration: none;
+    display: inline-grid;
+    grid-template-rows: 20px;
+    grid-template-columns: 130px;
+}
+
+.subnav-content a:hover {
+    border: 1px solid #76D694;
+}
+
+.menu1:hover .subnav-content {
+    display: grid;
+}
+
+/*main*/
+
 main{
     text-align: left;
+}
+
+main section{
+    border: 1px solid black;
 }
 
 #Sales {grid-area: menu;}
@@ -24,123 +124,36 @@ main{
     overflow: hidden;
 }
 
-main section{
-    border: 1px solid black;
-}
-
-#first_menu {
-    overflow: hidden;
-    background-color: black;
-    width: 100%;
-    height: auto;
-}
-
-#first_menu a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.menu1 {
-    float: left;
-    overflow: hidden;
-    padding: 14px 16px;
-    background-color: black;
-    height: 60px;
-}
-
-.menu1 .subnavbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 1px;
-}
-/*
-#first_menu a:hover{
-    border: 1px solid white;
-}
-*/
-.subnavbtn{
-    display: inline-grid;
-    grid-template-rows: 40px;
-    grid-template-columns: 150px;
-}
-
-.menu1:hover .subnavbtn {
-    border: 1px solid white;
-}
-
-.subnav-content {
-    display: none;
-    position: absolute;
-    background-color: black;
-    width: auto;
-    z-index: 1;
-}
-
-.subnav-content a {
-    float: right;
-    color: white;
-    text-decoration: none;
-    display: inline-grid;
-    grid-template-rows: 20px;
-    grid-template-columns: 130px;
-}
-
-.subnav-content a:hover {
-    border: 1px solid white;
-}
-
-.menu1:hover .subnav-content {
-    display: grid;
-}
-
-h1, #warning{
-    text-align: center;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 12px;
-}
-/*
-.triangle{
-    width:0px;
-    height:0px;
-    border: 21px solid;
-    border-bottom-color: black;
-    border-top-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    left: 0;
-}
-*/
-hr{
-    border-top: solid black;
-    border-bottom: hidden;
-    border-right-width: 200px;
-}
-
-footer{
-    text-align: right;
-}
-
-
-
 h2 {grid-area: header;}
 #item1 {grid-area: menu;}
 #item2 {grid-area: right;}
 #item3 {grid-area: footer;}
 #item5 {grid-area: iframe;}
 
+#item5{
+    border: hidden;
+    text-align: right;
+}
+
+#item5 iframe{
+    border: solid black;
+    border-bottom-right-radius: 5px;
+}
+
+#item5 a{
+    border: 7px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    background-color: black;
+    color: #76D694;
+
+}
+
+#item5 a:hover{
+    background-color: #728CD6;
+    color: #76D694;
+}
 
 #Sales{
     display: grid;
@@ -151,4 +164,32 @@ h2 {grid-area: header;}
     padding: 10px;
     grid-gap: 10px;
     overflow: hidden;
+}
+
+/*footer*/
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #728CD6;
+}
+
+.figura{
+    display: flex;
+    height: 13px;
+}
+
+#paranteza_deschisa{
+    color: #728CD6;
+}
+
+#paranteza_inchisa{
+    color: #728CD6;
+}
+
+address a{
+    text-decoration: none;
+    color: #728CD6;
 }
