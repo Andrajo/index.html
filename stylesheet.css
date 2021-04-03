@@ -235,6 +235,10 @@ h2 {grid-area: header;}
 
 /*footer*/
 
+footer{
+    margin: 10px;
+}
+
 .triangle{
     width: 0;
     height: 0;
@@ -243,9 +247,40 @@ h2 {grid-area: header;}
     border-bottom: 10px solid #167A80;
 }
 
+.figura p{
+    background: white;
+    visibility: hidden;
+    position: absolute;
+    left: 30px;
+    bottom: -15px;
+    width: auto;
+}
+
 .figura{
     display: flex;
     height: 13px;
+    opacity: 0.5;
+    border: 2px solid #0B3D40;
+    border-bottom: solid transparent;
+    border-top: solid transparent;
+    border-radius: 40px;
+    width: 20px;
+    position: fixed;
+    bottom: 0px;
+    background: white;
+
+}
+
+.figura:hover{
+    opacity: 1;
+}
+
+.figura:hover p{
+    visibility: visible;
+}
+
+.figura .triangle:hover{
+    border-bottom-color: black;
 }
 
 #paranteza_deschisa{
