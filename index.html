@@ -8,6 +8,7 @@
         <link rel="icon" href="iconita.png" type="image/png" sizes="16x16">
         <title>Game Store</title>
         <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     </head>
     <body>
         <header id="Home_page">
@@ -16,23 +17,35 @@
                 <nav>
                     <ul>
                         <li class="menu1">
-                            <button class="subnavbtn"><a href="#Home_page" target="_blank">Home page</a><i class="fa fa-caret-down"></i></button>
+                            <div class="edge" id="top_border"></div>
+                            <div class="edge" id="bottom_border"></div>
+                            <div class="edge" id="right_border"></div>
+                            <div class="edge" id="left_border"></div>
+                            <button class="subnavbtn"><a href="#Home_page" target="_blank"><i class="fa fa-home" aria-hidden="false"></i> Home page</a></button>
                             <ul class="subnav-content">
                                 <li>
-                                    <a href="#Sales">Sales</a>
+                                    <a href="#Sales"><i class='fas fa-long-arrow-alt-right' id="first_menu_arrow"></i>Sales</a>
                                 </li>
                                 <li>
-                                    <a href="#Most_popular">Most popular</a>
+                                    <a href="#Most_popular"><i class='fas fa-long-arrow-alt-right' id="second_menu_arrow"></i>Most popular</a>
                                 </li>
                                 <li>
-                                    <a href="#New_games">New games</a>
+                                    <a href="#New_games"><i class='fas fa-long-arrow-alt-right' id="third_menu_arrow"></i>New games</a>
                                 </li>
                             </ul>
                             </li>
                         <li class="menu1">
+                            <div class="edge" id="top_border2"></div>
+                            <div class="edge" id="bottom_border2"></div>
+                            <div class="edge" id="right_border2"></div>
+                            <div class="edge" id="left_border2"></div>
                             <button class="subnavbtn"><a href="#Home_page" target="_blank">Account Info</a></button>
                         </li>
                         <li class="menu1">
+                            <div class="edge" id="top_border3"></div>
+                            <div class="edge" id="bottom_border3"></div>
+                            <div class="edge" id="right_border3"></div>
+                            <div class="edge" id="left_border3"></div>
                             <button class="subnavbtn"><a href="#Home_page" target="_blank">Library</a></button>
                         </li>
                     </ul>
@@ -202,7 +215,9 @@
         </main>
         <footer>
             <section class="figura">
-                <a href="#Home_page" class="triangle"></a>
+                <div>
+                    <a href="#Home_page" class="triangle"></a>
+                </div>
                 <p>GoUp!</p>
             </section>
             <section>
