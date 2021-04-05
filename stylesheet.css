@@ -397,25 +397,25 @@ hr{
 .line.arrow-right:after {
     position: absolute;
     content: '';
-    bottom: -10px;
+    bottom: -6px;
     right: 0;
     width: 0;
     height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 10px solid #0B3D40;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 40px solid #0B3D40;
 }
 
 .line.arrow-left:after {
     position: absolute;
     content: '';
-    top: -10px;
+    top: -6px;
     left: 0;
     width: 0;
     height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid #0B3D40;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 40px solid #0B3D40;
 }
 
 hr{
