@@ -46,6 +46,10 @@ ul {
 
 /*menu*/
 
+#open_menu{
+    display: none;
+}
+
 #first_menu {
     overflow: hidden;
     width: 100%;
@@ -91,14 +95,11 @@ ul {
 }
 
 .menu1:hover .subnavbtn {
-    border: 1px solid #23C4CC;
-    border-left:groove;
-    border-right:groove;
-    border-top:groove;
-    border-bottom: groove;
+    border-left:groove #23C4CC;
+    border-right:groove #23C4CC;
+    border-top:groove #23C4CC;
+    border-bottom: groove #23C4CC;
     box-shadow: 3px 3px 3px black;
-    /*-webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
-*/
 }
 
 .subnav-content {
@@ -125,7 +126,7 @@ ul {
     left:0;
     opacity: 0;
     position: absolute;
-    transition: left 2s, opacity 2s;
+    transition: left 900ms, opacity 900ms;
     text-align: left;
 }
 
@@ -135,7 +136,7 @@ ul {
     left:0;
     opacity: 0;
     position: absolute;
-    transition: left 2s, opacity 2s;
+    transition: left 900ms, opacity 900ms;
     text-align: left;
 }
 
@@ -145,7 +146,7 @@ ul {
     left:0;
     opacity: 0;
     position: absolute;
-    transition: left 2s, opacity 2s;
+    transition: left 900ms, opacity 900ms;
     text-align: left;
 }
 
@@ -185,10 +186,6 @@ main section{
 }
 
 
-
-
-
-
 #Sales {grid-area: menu;}
 #warning {grid-area: header;}
 #Most_popular {grid-area: popular;}
@@ -213,15 +210,9 @@ main{
     overflow: hidden;
 }
 
+/*end of main*/
 
-
-
-
-
-
-
-
-
+/*Sales*/
 
 h2 {grid-area: header;}
 #item1 {grid-area: menu;}
@@ -279,6 +270,11 @@ h2 {grid-area: header;}
     overflow: hidden;
 }
 
+/*end of sales*/
+
+/*Table*/
+
+
 .table{
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -316,15 +312,17 @@ h2 {grid-area: header;}
     border-top-left-radius: 10px;
 }
 
+/*end of table*/
+
 /*footer*/
 
 footer{
     margin: 10px;
 }
 
+/*Link to top*/
+
 .triangle{
-    width: 0;
-    height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid #167A80;
@@ -340,6 +338,9 @@ footer{
     left: 30px;
     bottom: -15px;
     width: auto;
+    background-clip: content-box;
+    border:1px solid black;
+    border-radius:10px;
 }
 
 .figura{
@@ -370,29 +371,14 @@ footer{
     bottom:4px;
 }
 
-#paranteza_deschisa{
-    color: #167A80;
-}
-
-#paranteza_inchisa{
-    color: #167A80;
-}
+/*end of link to top*/
 
 address a{
     text-decoration: none;
     color: #0B3D40;
 }
 
-
-
-/*
-hr{
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 10px solid #0B3D40;
-    border-right: 10px solid #0B3D40;
-    background-clip: inherit;
-}*/
+/*Hr*/
 
 .line-container {
     display: flex;
@@ -438,3 +424,5 @@ hr{
     border-top-color: #0B3D40;
     border-bottom-color: #0B3D40;
 }
+
+/*end of hr*/
