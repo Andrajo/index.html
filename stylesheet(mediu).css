@@ -18,8 +18,14 @@ body{
     color: var(--c2);
 }
 
+h1{
+    text-align: left;
+    padding-top: 15%;
+    padding-left: 5%;
+    margin: 0;
+}
 
-h1, #warning, h2{
+#warning, h2{
     text-align: center;
 }
 
@@ -52,6 +58,7 @@ ul {
     width: 100%;
     background: var(--c2);
     height: auto;
+    position: fixed;
 }
 
 #navigation a {
@@ -197,7 +204,6 @@ main{
 
 #item5 iframe{
     border: solid var(--c2);
-    border-bottom-right-radius: 5px;
     width: auto;
 }
 
