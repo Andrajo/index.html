@@ -45,7 +45,6 @@ ul {
 }
 
 #first_menu{
-
 }
 
 
@@ -77,9 +76,9 @@ ul {
 .menu1 {
     float: left;
     overflow: hidden;
-    padding: 14px 16px;
     background-color: var(--c2);
-    height: 60px;
+    height: 4rem;
+    padding: 0;
 }
 
 .menu1 .subnavbtn {
@@ -92,14 +91,17 @@ ul {
 
 .subnavbtn{
     transition: border 300ms, box-shadow 300ms;
+    width: 100%;
+}
+
+.subnavbtn a{
+    text-align: center;
+    width: 100%;
 }
 
 .menu1:hover .subnavbtn {
-    border-left:groove var(--c4);
-    border-right:groove var(--c4);
-    border-top:groove var(--c4);
-    border-bottom: groove var(--c4);
     box-shadow:inset 0px 0px 25px var(--c6);
+    transition: box-shadow 300ms;
 }
 
 .subnav-content {
@@ -109,6 +111,9 @@ ul {
     width: auto;
 }
 
+.subnav-content a{
+    width: 100%;
+}
 
 #first_menu_arrow{
     display: none;
@@ -124,7 +129,7 @@ ul {
 
 
 .subnav-content a:hover {
-    border: 1px solid var(--c4);
+    box-shadow:inset 0px 0px 25px var(--c6);
 }
 
 .menu1:hover .subnav-content {
