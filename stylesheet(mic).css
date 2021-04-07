@@ -41,31 +41,9 @@ ul {
 /*menu*/
 
 #open_menu{
-
-}
-
-#first_menu{
-}
-
-
-#first_option{grid-area: home}
-#second_option{grid-area: info}
-#third_option{grid-area: library}
-
-
-#navigation {
-    overflow: hidden;
-    width: 100%;
-    background: var(--c2);
-    height: auto;
-}
-
-#first_menu a {
-    float: left;
+    position: fixed;
     display: block;
-    font-size: 12px;
-    text-decoration: none;
-    flex-shrink: 1;
+    background: var(--c2);
 }
 
 #la_prima_del_listo{
@@ -73,47 +51,66 @@ ul {
     flex-direction: column-reverse;
 }
 
+
+#navigation {
+    width: 100%;
+    background: var(--c2);
+    height: auto;
+    position: fixed;
+    top:10%;
+}
+
+#brrrrr{
+    display: none;
+}
+
+#navigation a {
+    font-size: 14px;
+    color: var(--c4);
+    text-align: center;
+    text-decoration: none;
+}
+
 .menu1 {
-    float: left;
-    overflow: hidden;
     background-color: var(--c2);
-    height: 4rem;
+    height: 5rem;
     padding: 0;
 }
 
 .menu1 .subnavbtn {
     border: none;
     outline: none;
-    color: var(--c4);
     background-color: inherit;
     font-family: inherit;
 }
 
-.subnavbtn{
+.menu1 #home_text{
+    display: none;
+}
+
+.subnavbtn, .subnav-content a{
+    width: 100%;
     transition: border 300ms, box-shadow 300ms;
-    width: 100%;
+    justify-content: center;
+    align-content: center;
 }
 
-.subnavbtn a{
-    text-align: center;
-    width: 100%;
-}
-
-.menu1:hover .subnavbtn {
-    box-shadow:inset 0px 0px 25px var(--c6);
-    transition: box-shadow 300ms;
+.menu1:hover .subnavbtn , .subnav-content a:hover{
+    box-shadow:inset 0 0 25px var(--c6);
 }
 
 .subnav-content {
     display: none;
     position: absolute;
+    left: 0;
     background-color: var(--c2);
-    width: auto;
-}
-
-.subnav-content a{
     width: 100%;
 }
+
+.subnav-content a {
+    text-align: center;
+}
+
 
 #first_menu_arrow{
     display: none;
@@ -129,19 +126,15 @@ ul {
 
 
 .subnav-content a:hover {
-    box-shadow:inset 0px 0px 25px var(--c6);
-}
-
-.menu1:hover .subnav-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    border: none;
 }
 
 
-#brrrrr{
-    display: none;
+.subnav-content #first_menu_arrow:hover,.subnav-content #second_menu_arrow:hover,.subnav-content #third_menu_arrow:hover{
+    left:10%;
+    opacity: 1;
 }
+
 
 /*end of menu*/
 
