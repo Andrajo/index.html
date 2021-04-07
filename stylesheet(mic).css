@@ -19,7 +19,14 @@ body{
 }
 
 
-h1, #warning{
+h1{
+    text-align: left;
+    padding-top: 5%;
+    padding-left: 5%;
+    margin: 0;
+}
+
+#warning{
     text-align: center;
 }
 
@@ -217,7 +224,6 @@ h2 {grid-area: header;}
 
 #item5 iframe{
     border: solid var(--c2);
-    border-bottom-right-radius: 5px;
     width: auto;
     height: auto;
 }
