@@ -30,41 +30,38 @@ ul {
 
 /*menu*/
 
-#first_menu {
-    overflow: hidden;
+#open_menu{
+    display: none;
+}
+
+#first_menu{
+
+}
+
+
+#navigation {
     width: 100%;
     background: #0B3D40;
     height: auto;
 }
 
-#first_menu a {
-    float: left;
-    font-size: 16px;
+#navigation a {
+    font-size: 14px;
     color: #23C4CC;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
 .menu1 {
-    float: left;
-    overflow: hidden;
-    padding: 14px 16px;
     background-color: #0B3D40;
     height: 60px;
 }
 
 .menu1 .subnavbtn {
-    display: flex;
-    font-size: 16px;
     border: none;
     outline: none;
-    color: #23C4CC;
-    padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
-    height: 4rem;
-    margin: 1px;
 }
 
 .menu1 #home_text{
@@ -72,21 +69,15 @@ ul {
 }
 
 .subnavbtn{
-    display: inline-grid;
-    grid-template-rows: 40px;
-    grid-template-columns: 150px;
-    transition: border 1s, box-shadow 1s;
+    transition: border 300ms, box-shadow 300ms;
 }
 
 .menu1:hover .subnavbtn {
-    border: 1px solid #23C4CC;
-    border-left:groove;
-    border-right:groove;
-    border-top:groove;
-    border-bottom: groove;
+    border-left:groove #23C4CC;
+    border-right:groove #23C4CC;
+    border-top:groove #23C4CC;
+    border-bottom: groove #23C4CC;
     box-shadow: 3px 3px 3px black;
-    /*-webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
-*/
 }
 
 .subnav-content {
@@ -94,26 +85,20 @@ ul {
     position: absolute;
     background-color: #0B3D40;
     width: auto;
-    z-index: 1;
 }
 
 .subnav-content a {
-    float: right;
-    color: #23C4CC;
-    text-decoration: none;
-    display: inline-grid;
-    grid-template-rows: 20px;
-    grid-template-columns: 130px;
+    display: flex;
 }
 
 
 #first_menu_arrow{
     width: 100%;
-    top:16%;
+    top:18%;
     left:0;
     opacity: 0;
     position: absolute;
-    transition: left 2s, opacity 2s;
+    transition: left 900ms, opacity 900ms;
     text-align: left;
 }
 
@@ -123,7 +108,7 @@ ul {
     left:0;
     opacity: 0;
     position: absolute;
-    transition: left 2s, opacity 2s;
+    transition: left 900ms, opacity 900ms;
     text-align: left;
 }
 
@@ -133,7 +118,7 @@ ul {
     left:0;
     opacity: 0;
     position: absolute;
-    transition: left 2s, opacity 2s;
+    transition: left 900ms, opacity 900ms;
     text-align: left;
 }
 
@@ -143,48 +128,26 @@ ul {
 }
 
 
-.subnav-content #first_menu_arrow:hover{
-    left:25%;
+.subnav-content #first_menu_arrow:hover,.subnav-content #second_menu_arrow:hover,.subnav-content #third_menu_arrow:hover{
+    left:10%;
     opacity: 1;
 }
 
-.subnav-content #second_menu_arrow:hover{
-    left:15%;
-    opacity: 1;
-}
-
-.subnav-content #third_menu_arrow:hover{
-    left:15%;
-    opacity: 1;
-}
-
-.menu1:hover .subnav-content {
-    display: grid;
-}
 
 /*main*/
 
 main{
-    text-align: left;
+    text-align: center;
 }
-
-
-main section{
-    border: hidden;
-}
-
-
 
 .table{
     overflow-y: scroll;
 }
 
+/*style for main*/
 
-
-
-
-#Sales {grid-area: menu;}
-#warning {grid-area: header;}
+#Sales {grid-area: sales;}
+#warning {grid-area: warning;}
 #Most_popular {grid-area: popular;}
 #New_games {grid-area: new;}
 .banner {grid-area: banner}
@@ -197,31 +160,21 @@ main section{
 main{
     display: grid;
     grid-template-areas:
-    'menu menu'
+    'sales sales'
     'table new'
     'popular friend'
     'info date_cont'
-    'header header';
+    'warning warning';
     padding: 10px;
     grid-gap: 10px;
     overflow: hidden;
 }
 
 
+/*end of style for main*/
 
 
-
-
-
-
-
-
-
-h2 {grid-area: header;}
-#item1 {grid-area: menu;}
-#item2 {grid-area: right;}
-#item3 {grid-area: footer;}
-#item5 {grid-area: iframe;}
+/*style for sales*/
 
 #item5{
     border: hidden;
@@ -261,6 +214,12 @@ h2 {grid-area: header;}
     color: #23C4CC;
 }
 
+h2 {grid-area: header;}
+#item1 {grid-area: menu;}
+#item2 {grid-area: right;}
+#item3 {grid-area: footer;}
+#item5 {grid-area: iframe;}
+
 #Sales{
     display: grid;
     grid-template-areas:
@@ -270,6 +229,12 @@ h2 {grid-area: header;}
     grid-gap: 10px;
     overflow: hidden;
 }
+
+
+/*end of style for sales*/
+
+
+/*style for table*/
 
 .table{
     font-family: Arial, Helvetica, sans-serif;
@@ -289,10 +254,6 @@ h2 {grid-area: header;}
 
 .table .data:hover {background-color: #23C4CC;}
 
-.table table{
-    width: 100%;
-}
-
 .table tr:first-child th:last-child{
     border-top-right-radius: 10px;
 }
@@ -309,21 +270,23 @@ h2 {grid-area: header;}
     border-top-left-radius: 10px;
 }
 
+/*style for table*/
+
 /*footer*/
 
 footer{
     margin: 10px;
 }
 
+/*style for top link*/
+
 .triangle{
-    width: 0;
-    height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid #167A80;
     position: absolute;
     bottom: 2px;
-    transition: border-bottom-color 1.5s, bottom 1s;
+    transition: border-bottom-color 300ms, bottom 300ms;
 }
 
 .figura p{
@@ -333,11 +296,12 @@ footer{
     left: 30px;
     bottom: -15px;
     width: auto;
+    background-clip: content-box;
+    border:1px solid black;
+    border-radius:10px;
 }
 
 .figura{
-    display: flex;
-    height: 13px;
     opacity: 0.5;
     border: 2px solid #0B3D40;
     border-bottom: solid transparent;
@@ -363,13 +327,7 @@ footer{
     bottom:4px;
 }
 
-#paranteza_deschisa{
-    color: #167A80;
-}
-
-#paranteza_inchisa{
-    color: #167A80;
-}
+/*end of style for top link*/
 
 address a{
     text-decoration: none;
@@ -377,15 +335,7 @@ address a{
 }
 
 
-
-/*
-hr{
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 10px solid #0B3D40;
-    border-right: 10px solid #0B3D40;
-    background-clip: inherit;
-}*/
+/*style for hr*/
 
 .line-container {
     display: flex;
@@ -431,3 +381,6 @@ hr{
     border-top-color: #0B3D40;
     border-bottom-color: #0B3D40;
 }
+
+
+/*end of style for hr*/
