@@ -19,7 +19,7 @@ body{
 }
 
 
-h1, #warning{
+h1, #warning, h2{
     text-align: center;
 }
 
@@ -45,7 +45,6 @@ ul {
 }
 
 #first_menu{
-
 }
 
 
@@ -64,7 +63,8 @@ ul {
 
 .menu1 {
     background-color: var(--c2);
-    height: 60px;
+    height: 5rem;
+    padding: 0;
 }
 
 .menu1 .subnavbtn {
@@ -83,10 +83,6 @@ ul {
 }
 
 .menu1:hover .subnavbtn {
-    border-left:groove var(--c4);
-    border-right:groove var(--c4);
-    border-top:groove var(--c4);
-    border-bottom: groove var(--c4);
     box-shadow:inset 0px 0px 25px var(--c6);
 }
 
@@ -134,7 +130,7 @@ ul {
 
 
 .subnav-content a:hover {
-    border: 1px solid var(--c4);
+    border: none;
 }
 
 
@@ -146,8 +142,9 @@ ul {
 
 /*main*/
 
+
 main{
-    text-align: center;
+    text-align: left;
 }
 
 .table{
