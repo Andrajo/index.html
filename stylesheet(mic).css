@@ -18,8 +18,15 @@ body{
     color: var(--c2);
 }
 
+h1{
+    text-align: left;
+    padding-top: 15%;
+    padding-left: 5%;
+    margin: 0;
+}
 
-h1, #warning{
+
+#warning, h2{
     text-align: center;
 }
 
