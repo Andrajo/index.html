@@ -16,30 +16,33 @@
         <header id="Home_page">
             <h1>Store</h1>
             <div id="first_menu">
-                <nav>
-                    <ul>
-                        <li class="menu1">
-                            <button class="subnavbtn"><a href="#Home_page" target="_blank"><i class="fa fa-home" aria-hidden="false"></i></a> <a id="home_text" href="#Home_page" target="_blank">Home page</a></button>
-                            <ul class="subnav-content">
-                                <li>
-                                    <a href="#Sales"><i class='fas fa-long-arrow-alt-right' id="first_menu_arrow"></i>Sales</a>
-                                </li>
-                                <li>
-                                    <a href="#Most_popular"><i class='fas fa-long-arrow-alt-right' id="second_menu_arrow"></i>Most popular</a>
-                                </li>
-                                <li>
-                                    <a href="#New_games"><i class='fas fa-long-arrow-alt-right' id="third_menu_arrow"></i>New games</a>
-                                </li>
-                            </ul>
+                <a href="javascript:void(0);" onclick="myFunction()" id="open_menu"><i class="fa fa-bars"></i></a>
+                <div id="brrrrr">
+                    <nav id="navigation">
+                        <ul id="la_prima_del_listo">
+                            <li class="menu1" id="first_option">
+                                <button class="subnavbtn"><a href="#Home_page" target="_blank"><i class="fa fa-home" aria-hidden="false"></i></a> <a id="home_text" href="#Home_page" target="_blank">Home page</a></button>
+                                <ul class="subnav-content">
+                                    <li>
+                                        <a href="#Sales"><i class='fas fa-long-arrow-alt-right' id="first_menu_arrow"></i>Sales</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Most_popular"><i class='fas fa-long-arrow-alt-right' id="second_menu_arrow"></i>Most popular</a>
+                                    </li>
+                                    <li>
+                                        <a href="#New_games"><i class='fas fa-long-arrow-alt-right' id="third_menu_arrow"></i>New games</a>
+                                    </li>
+                                </ul>
                             </li>
-                        <li class="menu1">
-                            <button class="subnavbtn"><a href="#Home_page" target="_blank">Account Info</a></button>
-                        </li>
-                        <li class="menu1">
-                            <button class="subnavbtn"><a href="#Home_page" target="_blank">Library</a></button>
-                        </li>
-                    </ul>
-                </nav>
+                            <li class="menu1" id="second_option">
+                                <button class="subnavbtn"><a href="#Home_page" target="_blank">Account Info</a></button>
+                            </li>
+                            <li class="menu1" id="third_option">
+                                <button class="subnavbtn"><a href="#Home_page" target="_blank">Library</a></button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <main>
@@ -222,5 +225,6 @@
                 <p><small>&copy; <time datetime="2021-03-05 14:00">Cinci martie,anul 2021</time> </small></p>
             </section>
         </footer>
+        <script src="main.js"></script>
     </body>
 </html>
