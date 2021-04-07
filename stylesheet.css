@@ -109,7 +109,7 @@ ul {
     border-right:groove var(--c4);
     border-top:groove var(--c4);
     border-bottom: groove var(--c4);
-    box-shadow: 3px 3px 3px var(--c6);
+    box-shadow:inset 0px 0px 25px var(--c6);
 }
 
 .subnav-content {
