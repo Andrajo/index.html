@@ -1,0 +1,96 @@
+
+/*main*/
+
+main{
+    text-align: left;
+}
+
+main section{
+    border: hidden;
+}
+
+
+#Sales {grid-area: menu;}
+#warning {grid-area: header;}
+#Most_popular {grid-area: popular;}
+#New_games {grid-area: new;}
+.banner {grid-area: banner}
+.table {grid-area: table}
+.info_explorator {grid-area: date_cont}
+.info_service {grid-area: info}
+.friends {grid-area: friend}
+
+
+main{
+    display: grid;
+    grid-template-areas:
+    'menu menu menu menu'
+    'table table popular popular'
+    'table table new new'
+    'friend date_cont date_cont info'
+    'header header header header';
+    padding: 1rem;
+    grid-gap: 1rem;
+    overflow: hidden;
+}
+
+/*end of main*/
+
+/*Sales*/
+
+h2 {grid-area: header;}
+#item1 {grid-area: menu;}
+#item2 {grid-area: right;}
+#item3 {grid-area: footer;}
+#item5 {grid-area: iframe;}
+
+#item5{
+    border: hidden;
+    text-align: right;
+}
+
+#section5{
+    display: flex;
+    float: right;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+
+#item5 iframe{
+    border: solid var(--c2);
+}
+
+
+#item5 a{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    color: var(--c4);
+    transition: background-color 1s;
+    transition-timing-function: ease;
+    border-top: 6px solid var(--c2);
+    border-bottom:6px solid transparent;
+    border-left:6px solid transparent;
+    border-right:6px solid transparent;
+    background-clip: padding-box;
+    background-color: var(--c2);
+}
+
+#item5 a:hover{
+    background-color: var(--c1);
+    color: var(--c4);
+}
+
+#Sales{
+    display: grid;
+    grid-template-areas:
+    'header header header header header'
+    'menu right footer iframe iframe'
+    'menu right footer iframe iframe';
+    padding: 10px;
+    grid-gap: 10px;
+    overflow: hidden;
+}
+
+/*end of sales*/

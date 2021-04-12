@@ -1,0 +1,100 @@
+
+#open_menu{
+    display: none;
+}
+
+#first_menu{
+}
+
+
+#navigation {
+    width: 100%;
+    background: var(--c2);
+    height: auto;
+    position: fixed;
+}
+
+#navigation a {
+    font-size: 14px;
+    color: var(--c4);
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu1 {
+    background-color: var(--c2);
+    height: 5rem;
+    padding: 0;
+}
+
+.menu1 .subnavbtn {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.menu1 #home_text{
+    display: none;
+}
+
+.subnavbtn{
+    transition: border 300ms, box-shadow 300ms;
+}
+
+.menu1:hover .subnavbtn {
+    box-shadow:inset 0px 0px 25px var(--c6);
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color: var(--c2);
+    width: auto;
+}
+
+.subnav-content a {
+    display: flex;
+}
+
+
+#first_menu_arrow{
+    width: 100%;
+    top:18%;
+    left:0;
+    opacity: 0;
+    position: absolute;
+    transition: left 900ms, opacity 900ms;
+    text-align: left;
+}
+
+#second_menu_arrow{
+    width: 100%;
+    top:45%;
+    left:0;
+    opacity: 0;
+    position: absolute;
+    transition: left 900ms, opacity 900ms;
+    text-align: left;
+}
+
+#third_menu_arrow{
+    width: 100%;
+    top:73%;
+    left:0;
+    opacity: 0;
+    position: absolute;
+    transition: left 900ms, opacity 900ms;
+    text-align: left;
+}
+
+
+.subnav-content a:hover {
+    border: none;
+}
+
+
+.subnav-content #first_menu_arrow:hover,.subnav-content #second_menu_arrow:hover,.subnav-content #third_menu_arrow:hover{
+    left:10%;
+    opacity: 1;
+}

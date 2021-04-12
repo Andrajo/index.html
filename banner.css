@@ -1,0 +1,21 @@
+
+
+
+@keyframes banner_style {
+    0%{left:-100%; visibility: visible;}
+    25%{background-color: var(--c3);border-color: var(--c1);left:-66%}
+    50%{background-color:var(--c1);border-color: var(--c5);left:-33%}
+    100%{background-color: var(--c5);border-color: var(--c1);left:0}
+}
+
+.banner{
+    border: 0.4rem solid var(--c2);
+    visibility: hidden;
+    position: fixed;
+    width: 98%;
+    bottom: 0;
+    left:0.4rem;
+    text-align: center;
+    background: var(--c1);
+    animation: banner_style 5s linear;
+}
