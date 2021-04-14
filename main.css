@@ -59,12 +59,13 @@ h2 {grid-area: header;}
 
 #item5 iframe{
     border: solid var(--c2);
+    border-bottom-right-radius: 3px;
 }
 
 
 #item5 a{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     text-decoration: none;
     color: var(--c4);
     transition: background-color 1s;
@@ -75,6 +76,9 @@ h2 {grid-area: header;}
     border-right:6px solid transparent;
     background-clip: padding-box;
     background-color: var(--c2);
+    margin: -100px;
+    right: 3px;
+    position: relative;
 }
 
 #item5 a:hover{
