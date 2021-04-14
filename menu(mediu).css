@@ -46,15 +46,28 @@
     box-shadow:inset 0px 0px 25px var(--c6);
 }
 
+@keyframes button_animation {
+    0% {
+        transform: scaleY(0)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
 .subnav-content {
     display: none;
     position: absolute;
     background-color: var(--c2);
     width: auto;
+    animation: button_animation 900ms ease-in-out;
+    transform-origin: top;
 }
 
 .subnav-content a {
     display: flex;
+    animation: button_animation 900ms ease-in-out;
+    transform-origin: top;
 }
 
 
