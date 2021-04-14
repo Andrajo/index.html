@@ -76,7 +76,7 @@ h2 {grid-area: header;}
     border-right:6px solid transparent;
     background-clip: padding-box;
     background-color: var(--c2);
-    margin: -100px;
+    margin: -3px;
     right: 3px;
     position: relative;
 }
