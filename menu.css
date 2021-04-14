@@ -58,12 +58,23 @@
     box-shadow:inset 0 0 1rem var(--c6);
 }
 
+@keyframes button_animation {
+    0% {
+        transform: scaleY(0)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
 .subnav-content {
     display: none;
     position: absolute;
     background-color: var(--c2);
     width: auto;
     z-index: 1;
+    animation: button_animation 900ms ease-in-out;
+    transform-origin: top;
 }
 
 .subnav-content a {
@@ -73,6 +84,8 @@
     display: inline-grid;
     grid-template-rows: 2rem;
     grid-template-columns: 9rem;
+    animation: button_animation 900ms ease-in-out;
+    transform-origin: top;
 }
 
 
@@ -107,10 +120,13 @@
 }
 
 
+.menu1:hover .subnav-content {
+    display: grid;
+}
+
 .subnav-content a:hover {
     border: none;
 }
-
 
 .subnav-content #first_menu_arrow:hover{
     left:25%;
@@ -125,8 +141,4 @@
 .subnav-content #third_menu_arrow:hover{
     left:15%;
     opacity: 1;
-}
-
-.menu1:hover .subnav-content {
-    display: grid;
 }
